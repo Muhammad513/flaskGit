@@ -10,7 +10,7 @@ pyloads={
     'Quantity':number
 }
 
-url=f'https://randommer.io/api/Phone/Generate'
+url='https://randommer.io/api/Phone/Generate'
 data=requests.get(url,params=pyloads,headers=headers).json()
 for i in data:
     print(i)
